@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK , PAPER , SCISSOR</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--  Algorithm steps
+         when we click a button
+         1. computer randomly selects a move 
+          2. compare the moves to get the results
+          3. update a score
+         4. display the result in pop up  -->
+         <div class="cover">
+          <div class="nav"></div>
+
+    <h2>Rock Paper Scissors</h2> 
+
+    <div class="main">
+      <!-- Rock -->
+       <div class="wrap">
+      <button class="move-btn"
+        onclick="
+        playGame('rock')
+      "
+      ><img class="move-icon" src="rock-emoji.png" alt="rock image">
+        
+      </button>
+
+      <!--  Paper-->
+
+      <button class="move-btn"
+        onclick="
+    playGame('Paper')
+      "
+      >
+      <img class="move-icon" src="paper-emoji.png" alt="paper image">
+      </button>
+
+      <!-- scissors -->
+
+      <button class="move-btn"
+        onclick="
+        
+    playGame('scissors')
+        
+      "
+      >
+   
+      <img class="move-icon" src="scissors-emoji.png" alt="scissor image">
+      </button>
+    </div>
+      <p class="js-results result" >you win</p>
+      <p class="js-moves"></p>
+      <p class="js-score score"></p>
+
+      <button class="reset-btn "
+        onclick="
+            score.wins=0;
+            score.losses=0;
+            score.Ties=0;
+            localStorage.removeItem('score');
+            updateScoreElement();
+      "
+      >
+        Reset Score
+      </button>
+    </div>
+
+    <div class="footer">
+      <p>Made with &hearts; by <a href="https://irycodes.netlify.app" target="_blank">Irycodes</a></p>
+    </div>
+  </div>
+   
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js">
+     
+    </script>
+  </body>
+</html>
