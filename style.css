@@ -38,6 +38,11 @@ h2 {
   justify-content: space-around;
   padding: 10px;
 }
+.wrap{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 .move-icon {
   height: 50px;
 }
@@ -52,6 +57,9 @@ h2 {
   cursor: pointer;
   margin-bottom: 100px;
   background-color: rgb(255, 255, 255) ;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .move-btn:active{
   box-shadow:  inset 1px 1px 10px grey,  -1px -1px 10px grey, 1px 1px 1px grey;
@@ -84,6 +92,9 @@ h2 {
   margin: 2px;
   border-radius: 50px;
   cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .footer{
   /* background-color: aqua; */
